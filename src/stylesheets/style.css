@@ -1,1 +1,65 @@
-ECHO is on.
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0px;
+    padding: 0px;
+    background-color: #edd2cb;
+    color: #361d32;
+
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.title {
+    display: flex;
+    position: absolute;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    color: #361d32;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    border-bottom: 5px solid #361d32;
+}
+
+.video button {
+    background-color: #edd2cb;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #361d32;
+
+    border-width: 5px;
+    transition-duration: 0.25s;
+}
+
+.video button:hover {
+    background-color: #361d32;
+    color: #edd2cb;
+}
