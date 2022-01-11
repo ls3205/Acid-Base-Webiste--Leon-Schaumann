@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
+@import url('../theme/mint.css');
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     margin: 0px;
     padding: 0px;
-    background-color: #edd2cb;
-    color: #361d32;
+    background-color: white;
+    color: #31E981;
 
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
@@ -26,6 +27,17 @@ body {
     }
 }
 
+.landingPage {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    position: static;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+}
+
 .title {
     display: flex;
     position: absolute;
@@ -33,33 +45,30 @@ body {
     font-weight: bold;
     margin: 0px;
     padding: 0px;
-    color: #361d32;
+    color: #31E981;
     left: 50%;
     top: 30%;
     transform: translate(-50%, -50%);
-    border-bottom: 5px solid #361d32;
+    border-bottom: 5px solid #31E981;
 }
 
-.video button {
-    background-color: #edd2cb;
-    position: absolute;
+.everyDayAcid {
+    display: flex;
+    position: static;
+    font-size: 20px;
+    font-weight: 200;
+    width: 100%;
+    height: 100vh;
     margin: 0px;
     padding: 0px;
-    top: 53%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20%;
-
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    color: #361d32;
-
-    border-width: 5px;
-    transition-duration: 0.25s;
+    background-color: var(--lightGray);
+    color: var(--black);
 }
 
-.video button:hover {
-    background-color: #361d32;
-    color: #edd2cb;
+.everyDayAcidTitle {
+    color: var(--darkGray);
+    display: flex;
+    position: relative;
+    top: 10vh;
+    left: 10vw;
 }
